@@ -1,0 +1,143 @@
+<!DOCTYPE html> 
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Скидан Владислава">
+    <meta name="description" content="Сторінка новин веб-проекту">
+    <title>Новини</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif; 
+            line-height: 1.8; 
+            color: rgb(255, 255, 255);
+            margin: 0;
+            padding: 20px; 
+            background-color: #030303; 
+        }
+        nav {
+            display: flex; 
+            justify-content: center; 
+            padding: 10px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0; 
+            padding: 0; 
+            display: flex; 
+            gap: 15px;
+        }
+        nav li {
+            display: flex;
+            align-items: center;
+            justify-content: center; 
+            width: 170px; 
+            height: 50px; 
+            background-color: #600060;
+            border: 2px solid #f7b0f7;
+            border-radius: 10px;
+        }
+        nav li a {
+            color: #e985e9;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        nav li a:hover {
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center; 
+            color: #00d7ff;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #00d7ff;
+            margin-top: 0;
+            margin-bottom: 5px;
+            font-size: 1.5rem;
+        }
+        .news-item {
+            margin-top: 25px; 
+            padding: 20px; 
+            border: 2px solid #bb11ad; 
+            border-radius: 10px; 
+            
+        }
+        p {
+            margin-top: 10px; 
+            margin-bottom: 10px; 
+            font-size: 1rem; 
+        }
+
+        hr {
+            margin-top: 20px;
+            border: none; 
+            height: 2px; 
+            background-color: #252424; 
+        }
+
+        .photo-row {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .photo-row img {
+            width: 300px; 
+            border-radius: 5px;
+            border: 2px solid #fff;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index mainn.html">Сторінка автора</a></li>
+            <li><a href="company main.html">Магазин</a></li>
+            <li><a href="news main.html">Новини</a></li>
+        </ul>
+    </nav>
+
+    <h1>Новини</h1>
+    <hr>
+
+    <div class="news-item">
+        <h2 title="Останні оновлення">Останні оновлення</h2>
+        <p align="justify" style="font-size: 18px;" title="Нова продукція">
+            Ми раді оголосити про нові надходження в нашому магазині! <abbr lang="uk" class="short">Нові</abbr> комп'ютерні аксесуари вже доступні для замовлення.
+        </p>
+        <p align="justify" style="font-size: 18px;" title="Акції та знижки">
+            Слідкуйте за нашими акціями, де ви можете отримати знижки до 20% на вибрані товари!
+        </p>
+    </div>
+
+    <div class="news-item">
+        <h2 title="Блоги">Блоги</h2>
+        <p align="justify" style="font-size: 18px;" title="Серія статей">
+            <em id="highlight" title="Найкращі поради">Ми запускаємо серію статей</em> про найновіші технології в комп'ютерних аксесуарах. Перегляньте наш <cite id="blogLink" title="Блог техно">блог</cite>, щоб дізнатися більше!
+        </p>
+    </div>
+
+    <div class="news-item">
+        <h2 title="Події">Події</h2>
+        <p align="justify" style="font-size: 18px;" title="Вебінар">
+            <dfn lang="uk" class="term">Вебінар</dfn> на тему "Тренди в комп'ютерних аксесуарах" відбудеться наступного тижня. Реєстрація вже відкрита!
+        </p>
+    </div>
+
+    <hr>
+    <div class="photo-row">
+        <img src="c:\Users\vlada\OneDrive\Зображення\Saved Pictures\keyboard.jpg.jpg" alt="Клавіатура">
+        <img src="c:\Users\vlada\OneDrive\Зображення\Saved Pictures\8d4fa1064d6865227ed66f32ed7915b5.jpg" alt="Миша">
+        <img src="c:\Users\vlada\OneDrive\Зображення\Saved Pictures\9551f0bf200042b932f2728610196e6a.jpg" alt="Монітор">
+    </div>
+
+</body>
+</html>
+
