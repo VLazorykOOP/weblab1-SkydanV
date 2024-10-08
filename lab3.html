@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комп'ютерні Аксесуари</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* чорний фон */
+            color: #ffffff; /* білий текст */
+        }
+        header {
+            background: #5c3e9a; /* фіолетовий */
+            color: #ffffff; /* білий текст */
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            background: #333; /* сірий */
+            color: #ffffff; /* білий текст */
+            padding: 15px 0;
+        }
+        nav a {
+            color: #00aaff; /* блакитний текст */
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline; /* підкреслення при наведенні */
+        }
+        main {
+            padding: 20px;
+            background: #444; /* середньо-сірий */
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255,255,255,0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #5c3e9a; /* фіолетовий */
+            color: #ffffff; /* білий текст */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        ol {
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+        ul {
+            margin: 20px 0;
+            padding: 0 20px;
+        }
+        marquee {
+            background-color: #00aaff; /* блакитний */
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Комп'ютерні Аксесуари</h1>
+</header>
+
+<nav>
+    <a href="index.html">Головна</a>
+    <a href="products.html">Продукти</a>
+    <a href="about.html">Про компанію</a>
+    <a href="contact.html">Контакти</a>
+    <a href="menu.html">Меню</a>
+</nav>
+
+<main>
+    <h2>Продукти</h2>
+    
+    <h3>Процесори</h3>
+    <ol start="1" type="A">
+        <li title="Intel Core i9">Intel Core i9 (3.6 GHz)</li>
+        <li title="AMD Ryzen 9">AMD Ryzen 9 (3.8 GHz)</li>
+        <li title="Intel Core i7">Intel Core i7 (3.4 GHz)</li>
+    </ol>
+
+    <h3>Монітори</h3>
+    <ul class="product-list">
+        <li title="LG UltraWide">LG UltraWide (34", 75Hz)</li>
+        <li title="Samsung Curved">Samsung Curved (27", 144Hz)</li>
+        <li title="Dell UltraSharp">Dell UltraSharp (24", 60Hz)</li>
+    </ul>
+
+    <h3>Вінчестери</h3>
+    <dl id="storage-info">
+        <dt title="HDD">HDD</dt>
+        <dd title="Seagate Barracuda, 2TB" class="storage-details">Об'єм: 2TB</dd>
+        
+        <dt title="SSD">SSD</dt>
+        <dd title="Samsung 970 EVO, 1TB" class="storage-details">Об'єм: 1TB</dd>
+    </dl>
+
+    <h3>Меню</h3>
+    <menu dir="ltr">
+        <command style="color: #ffffff;" disabled>Головна</command>
+        <command style="color: #ffffff;" checked>Продукти</command>
+        <command style="color: #ffffff;">Контакти</command>
+    </menu>
+
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+        Акція: Знижка 20% на всі процесори!
+    </marquee>
+</main>
+
+<footer>
+    <p>&copy; 2024 Комп'ютерні Аксесуари. Всі права захищені.</p>
+</footer>
+
+</body>
+</html>

@@ -1,67 +1,156 @@
 
-#processor {
-    background-color: #423737; 
-    border: 2px solid #ccc; /* Сірі границі */
-    padding: 10px; /* Внутрішній відступ */
-}
-
-.monitor {
-    color: #333; /* Колір тексту для монітора */
-}
-
-h1, h2 {
-    margin: 20px; /* Відступи для заголовків */
-}
-
-/* Селектори атрибутів */
-input[type="text"] {
-    border: 1px solid #aaa; /* Границя для текстових полів */
-}
-
-button[disabled] {
-    background-color: #eb0808; /* Сірий фон для неактивних кнопок */
-}
-
-/* Псевдокласи */
-a:hover {
-    color: red; /* Колір для посилання при наведенні */
-}
-
-input:focus {
-    outline: 2px solid red; /* Обведення при фокусі */
-}
-
-/* Псевдоелементи */
-p::first-line {
-    font-weight: bold; /* Жирний шрифт для першого рядка */
-}
-
-/* Границі, заповнювачі та позиціювання */
-.container {
-    margin-top: 20px; /* Відступ зверху */
-    padding: 15px; /* Внутрішній відступ */
-    border: 1px solid #000000; /* Чорна границя */
-}
-
-.item {
-    display: inline-block; /* Відображення у рядок */
-    float: left; /* Плаваюче розташування вліво */
-}
-
-/* Візуалізація елементів */
-.card {
-    max-width: 300px; /* Максимальна ширина */
-    min-height: 150px; /* Мінімальна висота */
-    overflow: hidden; /* Приховати переповнені елементи */
-}
-
-/* Колір фону */
 body {
-    background-color: #dc17be; /* Світло-сірий фон */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    line-height: 1.8; 
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 20px; 
+    background-color: #030303; 
 }
 
-/* Інші властивості */
-.header {
-    position: relative; /* Відносна позиція */
-    z-index: 10; /* Підняти на передній план */
+h1 {
+    text-align: center; 
+    color: #00d7ff;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #00d7ff;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.news-item {
+    margin-top: 25px; 
+    padding: 20px; 
+    border: 2px solid #bb11ad; 
+    border-radius: 10px; 
+}
+
+#highlight {
+    background-color: yellow;
+    color: #000000;
+}
+
+nav li a:hover {
+    color: #ff009d; 
+}
+
+.footer-link a:hover {
+    text-decoration: underline; 
+}
+
+h1::before {
+    content: "🔔 "; 
+}
+
+
+.box {
+    margin: 10px; 
+    padding: 20px; 
+    border: 2px solid rgb(255, 187, 0); 
+}
+
+.element {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    min-height: 400px;
+    overflow: hidden;
+}
+
+body {
+    background-color: #000000; 
+}
+
+nav {
+    display: flex; 
+    justify-content: center; 
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    gap: 15px;
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    width: 170px; 
+    height: 50px; 
+    background-color: #600060;
+    border: 2px solid #f7b0f7;
+    border-radius: 10px;
+}
+
+nav li a {
+    color: #e985e9;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+p {
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    font-size: 1rem; 
+}
+
+hr {
+    margin-top: 20px;
+    border: none; 
+    height: 2px; 
+    background-color: #252424; 
+}
+
+
+.photo-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.photo-row img {
+    width: 300px; 
+    border-radius: 5px;
+    border: 2px solid #1900ff;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #ff00f2;
+    color: #e0e0e0;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 5px 0; 
+}
+
+.footer-link a[href*="contact"] {
+    color: #540227;
+}
+
+.footer-content p:first-child {
+    font-weight: bold; 
+}
+.promo-text {
+    font-size: 27px; 
+    font-weight: bold; 
+    color: #00ff99; 
+    text-align: center;
+    margin: 20px 0; 
 }
